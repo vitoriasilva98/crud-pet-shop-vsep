@@ -58,26 +58,6 @@ public class PetDao extends Dao {
 		close();
 	}
 
-//	public Pet bucarReservaId(Integer idPet) throws Exception {
-//		open();
-//		stmt = con.prepareStatement("select * from Pet where idPet=?;");
-//		stmt.setInt(1, idPet);
-//		rs = stmt.executeQuery();
-//		Pet p = null;
-//		while (rs.next()) {
-//			p = new Pet();
-//			p.setIdPet(rs.getInt(1));
-//			p.setNome(rs.getString(2));
-//			p.setTipoAnimal(rs.getString(3));
-//			p.setRaca(rs.getString(4));
-//			p.setPorte(rs.getString(5));
-//			p.setData(rs.getString(6));
-//			p.setHorario(rs.getString(7));
-//		}
-//		close();
-//		return p;
-//	}
-
 	public void atualizarReserva(Pet pet) throws Exception {
 		open();
 		stmt = con.prepareStatement(
