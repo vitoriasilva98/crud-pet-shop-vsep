@@ -13,7 +13,7 @@ public class Dao {
 
 	public void open() throws Exception {
 		Class.forName("org.postgresql.Driver");
-		con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/crudpetshop", "postgres", "@Fan3farra");
+		con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/crudpetshop", "postgres", "senha");
 	}
 
 	public void close() throws Exception {
